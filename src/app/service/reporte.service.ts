@@ -66,4 +66,8 @@ export class ReporteService {
   reporte2(){
     return this.http.get<Reporte[]>(`${this.url}/reportetomado`);
   }
+
+  reporte(){
+    return this.http.get<Reporte[]>(`${this.url}/buscarultimosdias`);
+  }
 }
