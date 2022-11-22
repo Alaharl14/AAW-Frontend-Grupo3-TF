@@ -70,6 +70,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ReporteReporte2Component } from './page/reporte/reporte-reporte2/reporte-reporte2.component';
 import { CuentaReporteComponent } from './page/cuenta/cuenta-reporte/cuenta-reporte.component';
+import { ReporteReporteComponent } from './page/reporte/reporte-reporte/reporte-reporte.component';
 
 
 @NgModule({
@@ -122,6 +123,7 @@ import { CuentaReporteComponent } from './page/cuenta/cuenta-reporte/cuenta-repo
     ObjetoBuscarComponent,
     ReporteReporte2Component,
     CuentaReporteComponent,
+    ReporteReporteComponent,
   ],
   imports: [
     BrowserModule,

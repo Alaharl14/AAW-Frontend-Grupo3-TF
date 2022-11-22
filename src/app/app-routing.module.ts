@@ -1,3 +1,4 @@
+import { ReporteReporteComponent } from './page/reporte/reporte-reporte/reporte-reporte.component';
 import { CuentaReporteComponent } from './page/cuenta/cuenta-reporte/cuenta-reporte.component';
 import { ReporteReporte2Component } from './page/reporte/reporte-reporte2/reporte-reporte2.component';
 import { NgModule } from '@angular/core';
@@ -70,7 +71,9 @@ const routes: Routes = [
     path: 'reporte', component: ReporteComponent, children:[
       { path: 'agregar', component: ReporteCreaeditaComponent },
       { path: 'edicion/:id', component: ReporteCreaeditaComponent },
-      { path: 'reportes2', component: ReporteReporte2Component }
+      { path: 'reportes2', component: ReporteReporte2Component },
+      { path: 'reportes', component: ReporteReporteComponent }
+
     ]
   },
   {
