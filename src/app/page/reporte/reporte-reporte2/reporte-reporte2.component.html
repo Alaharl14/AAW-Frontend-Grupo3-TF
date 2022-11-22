@@ -1,0 +1,47 @@
+<div class="container">
+    <div style=" text-align: center;">
+      <br>
+      <h1>Reportes que se han tomado para resolver</h1>
+    </div>
+    <div style=" text-align: center;">
+      <br>
+      <a mat-raised-button [routerLink]="['/','reporte']" style="margin-left:auto;">Volver</a>
+    </div>
+<br>
+    <div>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" border="5" >
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell matHeaderCellDef> ID </th>
+          <td mat-cellmatCellDef="let element"> {{element.idReporte}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell matHeaderCellDef> Nombre </th>
+          <td mat-cellmatCellDef="let element"> {{element.nombreReporte}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="descripcion">
+          <th mat-header-cell matHeaderCellDef> Descripcion </th>
+          <td mat-cellmatCellDef="let element"> {{element.descripcionReporte}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="fecha">
+          <th mat-header-cell matHeaderCellDef> Fecha </th>
+          <td mat-cellmatCellDef="let element"> {{element.fechaReporte}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="objeto">
+          <th mat-header-cell matHeaderCellDef> Objeto </th>
+          <td mat-cellmatCellDef="let element"> {{element.objeto.nombreObjeto}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="estado">
+          <th mat-header-cell matHeaderCellDef> Estado Reporte </th>
+          <td mat-cellmatCellDef="let element"> {{element.estadoreporte.nombreEstadoReporte}} </td>
+        </ng-container>
+
+        <tr mat-header-row matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-rowmatRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
