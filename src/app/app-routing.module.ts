@@ -1,3 +1,4 @@
+import { CuentaReporteComponent } from './page/cuenta/cuenta-reporte/cuenta-reporte.component';
 import { ReporteReporte2Component } from './page/reporte/reporte-reporte2/reporte-reporte2.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -25,7 +26,8 @@ const routes: Routes = [
   {
     path: 'cuenta', component: CuentaComponent, children:[
       { path: 'agregar', component: CuentaCreaeditaComponent },
-      { path: 'edicion/:id', component: CuentaCreaeditaComponent }
+      { path: 'edicion/:id', component: CuentaCreaeditaComponent },
+      { path: 'reportes', component: CuentaReporteComponent },
     ]
   },
   {
