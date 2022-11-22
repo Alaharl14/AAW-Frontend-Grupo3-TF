@@ -1,3 +1,4 @@
+import { Respuesta } from './../model/respuesta';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EMPTY, Subject } from 'rxjs';
@@ -37,6 +38,10 @@ export class CuentaService {
    return this.http.post<Cuenta[]>(`${this.url}/buscar`, texto.toLowerCase());
   }
     return EMPTY;
+  }
+
+  reporteMas(){
+    return this.http.get<Respuesta[]>(`${this.url}/reportes`);
   }
 
   listarId(id: number) {
