@@ -63,5 +63,7 @@ export class ReporteService {
     this.confirmaEliminacion.next(estado);
   }
 
-
+  reporte2(){
+    return this.http.get<Reporte[]>(`${this.url}/reportetomado`);
+  }
 }

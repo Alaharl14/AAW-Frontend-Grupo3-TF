@@ -1,3 +1,4 @@
+import { ReporteReporte2Component } from './page/reporte/reporte-reporte2/reporte-reporte2.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CuentaComponent } from './page/cuenta/cuenta.component';
@@ -66,7 +67,8 @@ const routes: Routes = [
   {
     path: 'reporte', component: ReporteComponent, children:[
       { path: 'agregar', component: ReporteCreaeditaComponent },
-      { path: 'edicion/:id', component: ReporteCreaeditaComponent }
+      { path: 'edicion/:id', component: ReporteCreaeditaComponent },
+      { path: 'reportes2', component: ReporteReporte2Component }
     ]
   },
   {

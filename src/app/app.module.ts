@@ -68,6 +68,7 @@ import { ObjetoBuscarComponent } from './page/objeto/objeto-buscar/objeto-buscar
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ReporteReporte2Component } from './page/reporte/reporte-reporte2/reporte-reporte2.component';
 
 
 @NgModule({
@@ -118,6 +119,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     ObjetoDialogoComponent,
     ObjetoCreaeditaComponent,
     ObjetoBuscarComponent,
+    ReporteReporte2Component,
   ],
   imports: [
     BrowserModule,
